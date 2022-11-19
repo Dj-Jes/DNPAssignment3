@@ -1,0 +1,10 @@
+﻿namespace Domain.Models {
+    public class User {
+        public string Id { get; set; }
+        public string Username { get; set; }
+        public string HashedPassword { get; set; }
+        public int Karma { get; set; }
+        public ICollection<SubPage> SubscribedSubs { get; set; }
+        
+    }
+}
